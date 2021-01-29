@@ -7,7 +7,7 @@ import pytorch_lightning as pl
 from torch import nn
 import torch
 import torch.nn.functional as F
-
+from config import Config
 
 class FFN(nn.Module):
     def __init__(self, in_feat):

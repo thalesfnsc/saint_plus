@@ -60,7 +60,7 @@ def get_dataloaders():
               "prior_question_elapsed_time": "float32", "task_container_id": "int16"}
     print("loading csv.....")
     train_df = pd.read_csv(Config.TRAIN_FILE, usecols=[
-                           1, 2, 3, 4, 5, 7, 8], dtype=dtypes, nrows=90e6)
+                           1, 2, 3, 4, 5, 7, 8], dtype=dtypes, nrows=10000)
     print("shape of dataframe :", train_df.shape)
 
     train_df = train_df[train_df.content_type_id == 0]
